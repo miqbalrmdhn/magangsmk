@@ -1,0 +1,70 @@
+/* CSS kustom untuk tampilan yang menarik */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.book {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.bmi-form-container {
+    flex: 1;
+    max-width: 400px;
+    min-width: 350px;
+    max-height: 500px;
+    min-height: 420px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.bmi-form-container h2 {
+    margin-bottom: 20px;
+}
+.bmi-badan {
+    margin-bottom: 15px;
+}
+.bmi-form-container button {
+    margin-top: 10px;
+}
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hasil {
+    max-width: 400px;
+    min-width: 350px;
+    max-height: 500px;
+    min-height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.judul-hasil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Responsif di perangkat handphone */
+@media (max-width: 768px) {
+    .book {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .bmi-form-container, .right {
+        margin-bottom: 20px;
+    }
+}
